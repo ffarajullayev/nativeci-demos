@@ -118,7 +118,10 @@ func main() {
 			c.Redirect(301, "/chat")
 		} else {
 			c.HTML(http.StatusOK, "index.html", nil)
-		}
+		}	
+	})
+	r.GET("/loaderio-b51f4c7e2d23adaca12ebc385a34ecf7", func(c *gin.Context){
+		c.Data(200, "text/html; charset=utf-8", []byte("loaderio-b51f4c7e2d23adaca12ebc385a34ecf7"))
 	})
 	r.Run("0.0.0.0:8000")
 }
