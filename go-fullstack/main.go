@@ -24,7 +24,7 @@ func main() {
 		})
 	})
 	r.GET("/loaderio-345f0e73092256270286441af8d5e2fe", func(c *gin.Context){
-		c.Data(200, "text/html; charset=utf-8", "loaderio-345f0e73092256270286441af8d5e2fe")
+		c.Data(200, "text/html; charset=utf-8", []byte("loaderio-345f0e73092256270286441af8d5e2fe"))
 	})
 	r.Run("0.0.0.0:8000")
 }
